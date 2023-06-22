@@ -1,0 +1,14 @@
+
+DROP TABLE DeliveryOrder;
+CREATE TABLE DeliveryOrder(
+    DeliveryOrderId int NOT NULL AUTO_INCREMENT,
+    CustName varchar(30),
+    CustID int(4),
+    CustAddress varchar(30),
+    PublicationName varchar(30),
+    PAmount int(4),
+    DeliveryDate varchar(12),     
+    PRIMARY KEY (DeliveryOrderId)
+);
+
+INSERT INTO DeliveryOrder(DeliveryOrderId,CustName,PublicationName,DeliveryDate) VALUES (1,'Jack','Starry', '13/2/2021');
